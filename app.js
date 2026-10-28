@@ -101,9 +101,9 @@ app.use((req, res, next) => {
 // })
 
 
-// app.get("/",(req,res)=>{
-//     res.send("Hi i am root");
-// })
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+})
 
 // app.get("/testListing", async (req,res)=>{
 //     let sampleListing = new Listing({
