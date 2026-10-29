@@ -53,6 +53,7 @@
                 </form>
             </div>
         <% } %>
+
     </div>
 </div>
 
@@ -116,6 +117,12 @@
                 Submit Review
             </button>
         </form>
+
+    <% } else { %>
+        <h4>Leave a Review</h4>
+        <p>
+            <a href="/login">Log in</a> to share your experience and write a review.
+        </p>
     <% } %>
 
     <!-- Existing Reviews -->
@@ -158,11 +165,13 @@
                 </div>
             <% } %>
         </div>
+
     <% } else { %>
         <p class="text-muted mt-4">
             No reviews yet. Be the first to leave one!
         </p>
     <% } %>
+
 </div>
 
 <hr>
